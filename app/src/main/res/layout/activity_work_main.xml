@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WorkMainActivity">
+
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#aba"
+        android:padding="3dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/tvDisplayInfoId"
+        />
+
+    <EditText
+        android:textDirection="ltr" android:layoutDirection="ltr"
+        android:layout_gravity="left" android:gravity="left"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:hint="total"
+        android:id="@+id/etTotalId"
+        android:maxLength="3"
+        />
+
+    <EditText
+        android:textDirection="ltr" android:layoutDirection="ltr"
+        android:layout_gravity="left" android:gravity="left"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:hint="good"
+        android:id="@+id/etGoodId"
+        android:maxLength="3"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left" android:gravity="left"
+        android:layoutDirection="ltr" android:textDirection="ltr"
+        >
+
+    <Button
+        style="@style/name_btn_style"
+        android:background="@color/colorOrange"
+        android:text="@string/submit"
+        android:id="@+id/btnSubmitId"
+        />
+
+        <Button
+            style="@style/name_btn_style"
+            android:layout_width="100dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Date"
+            android:id="@+id/btnCalendarId"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/name_btn_style"
+        android:background="@color/colorOrange"
+        android:text="Show records"
+        android:id="@+id/btnLogDisplayId"
+        />
+
+    <ImageView
+        android:layout_margin="5dp" android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:id="@+id/ivBackPicId"
+        android:src="@mipmap/bar"
+        />
+
+    <SeekBar
+        android:layoutDirection="ltr"
+        android:layout_margin="3sp"
+        android:layout_marginTop="100sp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#aba"
+        android:layout_gravity="center"
+        android:id="@+id/sb"/>
+
+</LinearLayout>

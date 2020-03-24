@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr" android:textDirection="ltr"
+        android:layout_gravity="center" android:gravity="center"
+        >
+
+    <Button
+        style="@style/name_log_style"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center" android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="חזרה לעמוד ראשי"
+        android:id="@+id/btnBackToMainPageId"
+        android:layout_marginRight="3dp"
+        />
+
+        <Button
+            style="@style/name_log_style"
+            android:layout_marginTop="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="איפוס הרישומים"
+            android:id="@+id/btnResetDbId"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layoutDirection="ltr" android:textDirection="ltr"
+        android:layout_gravity="left" android:gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPercentageId"
+        android:hint="%"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv"
+        android:layout_marginTop="20dp"
+        >
+
+    </ListView>
+
+</LinearLayout>
